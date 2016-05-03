@@ -30,7 +30,7 @@ set_version_variables()
 	# set precise commit in repo to use 
 	# you can set this to an alternate commit 
 	# or empty to checkout latest 
-	openwrt_commit="a0847febf3afac0997b821f62be8c91e00e25fa0"
+	openwrt_commit="b763ba211deeab857ef7c2e5275e92c15dd5e249"
 	openwrt_abbrev_commit=$( echo "$openwrt_commit" | cut -b 1-7 )
 
 	#set date here, so it's guaranteed the same for all images
