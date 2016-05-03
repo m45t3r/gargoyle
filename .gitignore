@@ -1,0 +1,6 @@
+*-src/
+built/
+compressed_javascript/
+downloaded/
+images/
+package-prepare/
