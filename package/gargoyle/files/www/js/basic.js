@@ -586,6 +586,9 @@ function saveChanges()
 			else
 			{
 				uci.set("network", "wan", "proto", getSelectedValue('wan_protocol').replace(/_.*$/g, ""));
+				// disable ipv6 on WAN, since Gargoyle did not support anyway and
+				// it causes some issues, like PPPoE disconnects
+				uci.set("network", "wan", "ipv6", "0");
 			}
 			if(uci.get('network', 'lan', 'proto') === '')
 			{
