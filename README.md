@@ -14,7 +14,7 @@ upstream). At the same time, I created a special target only for ath9k routers w
 support (called `nousb`). So for people that own TP-Link TL-WR{7xx,8xx,9xx} or TL-WA{7xx,8xx,9xx}, this may be your
 Gargoyle Firmware version.
 
-### Extra features (compared to 1.8.1 image)
+### Extra features (compared to official 1.8.1 image)
 
 - Up-to-date 1.8 branch (only small fixes);
 - Up-to-date BB branch (mostly security fixes related to openssl/samba, that aren't included by default anyway);
@@ -25,5 +25,9 @@ Gargoyle Firmware version.
       plugin-gargoyle-theme-light, plugin-gargoyle-theme-xeye.
 - Removed unecessary bloat (debug support from Kernel, USB modules, strip kernel headers);
     * 480KB `/overlay` partition (vs. 360KB from 1.8.1);
-- Backport fixes from current Gargoyle Firmware trunk (switch to Git, HTML5);
-- Update HTTPS certs to SHA256.
+- Backport fixes from current Gargoyle Firmware trunk (switch to Git, HTML5, small fixes...);
+- Allow user to select country for regulatory purposes (See: https://github.com/ericpaulbishop/gargoyle/pull/469,
+  reject by upstream);
+- Small bug fixes not presented yet upstream.
+    * Update HTTPS certs to SHA256;
+    * Disable IPv6 on WAN interface (Gargoyle does not have IPv6 support anyway, and this seems to cause issues).
