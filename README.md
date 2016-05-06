@@ -63,3 +63,10 @@ reproduce the same issue on my hardware.
 * TL-WR841ND
 * TL-WR841N
 * TL-WR941ND
+
+### Known issues
+
+The default link for `Plugin Sources` (http://www.gargoyle-router.com/packages/gargoyle-1.8/ar71xx/nousb) does not
+work. This is proposital, since the rest of Gargoyle plugins shouldn't work in this build anyway. However, if you
+want to try your luck (specially if you want to download translations, that should still work), simple add the
+official link for default images: http://www.gargoyle-router.com/packages/gargoyle-1.8/ar71xx/default
