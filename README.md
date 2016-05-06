@@ -31,3 +31,35 @@ Gargoyle Firmware version.
 - Small bug fixes not presented yet upstream.
     * Update HTTPS certs to SHA256;
     * Disable IPv6 on WAN interface (Gargoyle does not have IPv6 support anyway, and this seems to cause issues).
+
+### Supported models
+
+"Supported" here means that the router listed below seems to have a hardware similar to **TL-WR941ND**, that is the
+only router that I have to test these builds. It not means that I can fix the problems of your router, unless I can
+reproduce the same issue on my hardware.
+
+* TL-MR10U
+* TL-MR11U
+* TL-MR13U
+* TL-MR3020
+* TL-MR3040
+* TL-MR3220
+* TL-MR3420
+* TL-WA701N
+* TL-WA701ND
+* TL-WA730REV1
+* TL-WA750RE
+* TL-WA7510N
+* TL-WA801ND
+* TL-WA830RE
+* TL-WA850RE
+* TL-WA860RE
+* TL-WA901ND
+* TL-WR703N
+* TL-WR720N
+* TL-WR740N
+* TL-WR741ND
+* TL-WR743ND
+* TL-WR841ND
+* TL-WR841N
+* TL-WR941ND
