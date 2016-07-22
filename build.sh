@@ -37,7 +37,7 @@ set_version_variables()
 	#even though build can take several hours
 	build_date=$(date +"%B %d, %Y")
 
-	gargoyle_git_revision=$(git log -1 --pretty=format:%h )
+	gargoyle_git_revision=$(git log -1 HEAD~1 --pretty=format:%h )
 
 
 	# Full display version in gargoyle web interface
